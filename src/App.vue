@@ -28,3 +28,6 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+@import './css/all.scss';
+</style>
