@@ -2,7 +2,7 @@
   <main id="info" class="page-second">
         <section class="l-info1">
             <h2 class="c-title3 text-center"><span>企業・グループ情報</span><small class="mont">Corporate and Group Information</small></h2>
-            <figure class="c-mv"><img src="../../assets/about/info/mv.jpg" alt="企業・グループ情報"></figure>
+            <figure class="c-mv"><img src="../../assets/mv_info.jpg" alt="企業・グループ情報"></figure>
         </section>
         <section class="l-info2">
             <ul class="flex flex-align-item-center flex-jus-center flex-container">
@@ -27,7 +27,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>

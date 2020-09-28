@@ -26,7 +26,7 @@
                     <dl>
                         <dt>地図</dt>
                         <dd>
-                            <img class="c-map-img" alt="地図" src="../../assets/about/info/access/map.jpg">
+                            <!-- <img class="c-map-img" alt="地図" src="../access/map.jpg"> -->
                             <a class="c-btn2 c-btn2__map flex flex-align-item-center flex-jus-center" href="https://www.google.com/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%81%8F%E3%81%B5%E3%81%86%E3%82%AB%E3%83%B3%E3%83%91%E3%83%8B%E3%83%BC/@35.6527083,139.7420977,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b580e95c1a1:0xb2732e8a69129798!8m2!3d35.6527083!4d139.7442864" target="_blank" rel="noopener noreferrer"><span>GoogleMapで開く</span></a>
                         </dd>
                     </dl>
@@ -45,7 +45,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>

@@ -8,7 +8,6 @@ import Boards from './views/info/boards'
 import History from './views/info/history'
 import Philosophy from './views/info/philosophy'
 import Products from './views/info/products'
-import Profile from './views/info/profile'
 
 export const routes = [
     {
@@ -34,9 +33,6 @@ export const routes = [
     },
     {
         path: '/about/info/products', name: 'Products', component: Products
-    },
-    {
-        path: '/about/info/profile', name: 'Profile', component: Profile
     },
     {
         path: '/privacypolicy', name: 'Privacypolicy', component: Privacypolicy
