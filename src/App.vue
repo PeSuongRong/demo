@@ -1,30 +1,20 @@
 <template>
   <div id="app">
-    <CompHeader></CompHeader>
-    <router-link to="/contact">Contact</router-link>
-    <router-view />
-    <CompFooter></CompFooter>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import CompHeader from './components/compHeader'
-import CompFooter from './components/compFooter'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'app',
-  data () {
-    return {
-      
-    }
-  },
+  name: 'App',
   components: {
-    CompHeader,
-    CompFooter
-
-  },
-  mounted(){
-  
+    HelloWorld
   }
 }
 </script>
+
+<style>
+</style>
