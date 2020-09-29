@@ -5,7 +5,7 @@
         <div class="c-box c-box1">
           <figure>
             <img
-              :src="listSecHome2[0].img"
+              src="../assets/img-top1-small1.svg"
               class="hidden_pc"
               :alt="listSecHome2[0].title"
             >
@@ -26,7 +26,7 @@
         <div class="c-box c-box2">
           <figure>
             <img
-              :src="listSecHome2[1].img"
+              src="../assets/img-top1-small2.svg"
               class="hidden_pc"
               :alt="listSecHome2[1].title"
             >
@@ -47,7 +47,7 @@
         <div class="c-box c-box3">
           <figure>
             <img
-              :src="listSecHome2[2].img"
+              src="../assets/img-top1-small3.svg"
               class="hidden_pc"
               :alt="listSecHome2[2].title"
             >
@@ -74,18 +74,15 @@
 var listSecHome2 = [
     {
         title:"結婚に",
-        info: "結婚式をもっと自由に。もっと楽しく。<br>どこでも、何度でも！<br>素敵な結婚式を増やします。",
-        img: "img/listSecHome2/img-top1-small1.svg"
+        info: "結婚式をもっと自由に。もっと楽しく。<br>どこでも、何度でも！<br>素敵な結婚式を増やします。"
     },
     {
         title:"住まいに",
-        info: "住まいの売り買いって、難しそう。<br>もっと気軽に、もっと賢くできるはず。<br>住まいに対する疑問やストレスを減らします。",
-        img: "img/listSecHome2/img-top1-small2.svg"
+        info: "住まいの売り買いって、難しそう。<br>もっと気軽に、もっと賢くできるはず。<br>住まいに対する疑問やストレスを減らします。"
     },
     {
         title:"お金に",
-        info: "お金って身近だけど、よくわからない。<br>しかし、とても重要。<br>お金に関して「学ぶ」、「問題を解決する」ことを応援します。",
-        img: "img/listSecHome2/img-top1-small3.svg"
+        info: "お金って身近だけど、よくわからない。<br>しかし、とても重要。<br>お金に関して「学ぶ」、「問題を解決する」ことを応援します。"
     },
 ]
 export default {
