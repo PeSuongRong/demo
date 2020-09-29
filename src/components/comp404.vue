@@ -1,16 +1,20 @@
 <template>
   <div>
     <main class="l-404 page-second">
-        <h2 class="text-center">404</h2>
-        <h3 class="text-center">Not Found</h3>
-        <p>ページがありません</p>
+      <h2 class="text-center">
+        404
+      </h2>
+      <h3 class="text-center">
+        Not Found
+      </h3>
+      <p>ページがありません</p>
     </main>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'contact',
+  name: 'Page404',
   data () {
     return {
      
