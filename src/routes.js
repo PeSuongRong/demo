@@ -1,5 +1,6 @@
 import Page404 from './components/comp404'
 import Home from './views/home'
+import Pressroom from './views/pressroom'
 import Security from './views/security'
 import Info from './views/info/info'
 import Access from './views/info/access'
@@ -8,6 +9,7 @@ import History from './views/info/history'
 import Philosophy from './views/info/philosophy'
 import Products from './views/info/products'
 import Profile from './views/info/profile'
+import Ir from './views/ir/ir'
 
 export const routes = [
     {
@@ -18,18 +20,16 @@ export const routes = [
         }
     },
     {
-        path: '*', name: 'Page404', component: Page404,
-        meta: {
-            title: "404",
-            forVisitors: true
-        }
+        path: '*', name: 'Page404', component: Page404
     },
     {
-        path: '/security', name: 'Security', component: Security,
-        meta: {
-            title: "Security-kufu",
-            forVisitors: true
-        }
+        path: '/about/pressroom', name: 'Pressroom', component: Pressroom
+    },
+    {
+        path: '/about/security', name: 'Security', component: Security
+    },
+    {
+        path: '/about/ir', name: 'IR', component: Ir
     },
     {
         path: '/about/info', name: 'Info', component: Info

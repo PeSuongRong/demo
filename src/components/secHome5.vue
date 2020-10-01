@@ -6,7 +6,7 @@
       </h2>
       <ul class="l-news">
         <li
-          v-for="(item, index) in list"
+          v-for="(item, index) in listNew.slice(0,5)"
           :key="index"
         >
           <a
@@ -25,28 +25,37 @@
         </li>
       </ul>
       <div class="c-list-btn flex flex-jus-center flex-container">
-        <a
+        <router-link
           class="c-btn1"
-          href="/about/pressroom"
-        >プレスルームはこちら</a><a
+          to="/about/pressroom"
+        >
+          プレスルームはこちら
+        </router-link><router-link
           class="c-btn1"
-          href="/about/ir/news"
-        >IRニュースはこちら</a>
+          to="/about/ir/news"
+        >
+          IRニュースはこちら
+        </router-link>
       </div>
     </div>
   </section>
 </template>
 <script>
+// eslint-disable-next-line no-undef
+window.axios = require('axios');
+
 export default {
   name: 'SecHome5',
-  props: {
-      // eslint-disable-next-line vue/require-default-prop
-      list: Array
-  },
   data () {
     return {
-     
+     listNew: []
     }
+  },
+  mounted(){
+    // eslint-disable-next-line no-undef
+    axios.get('http://localhost:8080/data/pressroom.json').then(
+      response=> this.listNew = response.data
+    )
   }
 }
 </script>

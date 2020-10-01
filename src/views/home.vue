@@ -5,44 +5,12 @@
       <secHome2 />
       <secHome3 />
       <secHome4 />
-      <secHome5 :list="listNew" />
+      <secHome5 />
     </main>
   </div>
 </template>
 
 <script>
-var listNew = [
-    {
-        date:"2020/8/28",
-        isPDF: true,
-        text: "特別損失の計上に関するお知らせ",
-        link:"www.google.com"
-    },
-    {
-        date:"2020/8/28",
-        isPDF: false,
-        text: "「人生観が変わりました！」人気急上昇中・3時のヒロイン 福田 麻貴さんがウェディングドレス試着に人生初挑戦！！",
-        link:"www.facebook.com"
-    },
-    {
-        date:"2020/8/28",
-        isPDF: false,
-        text: "コロナ禍で子育ての悩みや困りごとが増加した家庭が70%、3歳からのはぐくみメディア『おやこのくふう』をリリース",
-        link:"www.zing.com"
-    },
-    {
-        date:"2020/8/28",
-        isPDF: true,
-        text: "投資事業有限責任組合の設立に関するお知らせ",
-        link:"www.kenh14.vn"
-    },
-    {
-        date:"2020/8/28",
-        isPDF: true,
-        text: "業績予想に関するお知らせ",
-        link:"www.baomoi.vn"
-    }
-]
 import $ from 'jquery'
 import secHome1 from '../components/secHome1'
 import secHome2 from '../components/secHome2'
@@ -61,7 +29,7 @@ export default {
   },
   data () {
     return {
-     listNew: listNew
+    
     }
   },
   mounted(){
@@ -152,7 +120,6 @@ export default {
       }
     });
   });
-  
   }
 }
 </script>
