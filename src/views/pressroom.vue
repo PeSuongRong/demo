@@ -133,7 +133,7 @@ export default {
   },
   mounted(){
     // eslint-disable-next-line no-undef
-    axios.get('http://localhost:8080/data/pressroom.json').then(
+    axios.get('./data/pressroom.json').then(
     response=> this.listNew = response.data
     ).then(
           $(document).ready(function(){
