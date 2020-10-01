@@ -1,20 +1,28 @@
 <template>
-   <main id="info-philosophy" class="page-second">
-        <section class="l-info-philosophy">
-            <div class="l-content">
-                <h2 class="c-title3 text-center"><span>企業理念</span><small class="mont">Philosophy</small></h2>
-                <div class="pdt15 l-info-philosophy__text">
-                    <h3 class="text-center">{{title}}</h3>
-                    <div v-html="content"></div>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main
+    id="info-philosophy"
+    class="page-second"
+  >
+    <section class="l-info-philosophy">
+      <div class="l-content">
+        <h2 class="c-title3 text-center">
+          <span>企業理念</span><small class="mont">Philosophy</small>
+        </h2>
+        <div class="pdt15 l-info-philosophy__text">
+          <h3 class="text-center">
+            {{ title }}
+          </h3>
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <div v-html="content" />
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
 export default {
-  name: 'philosophy',
+  name: 'Philosophy',
   data () {
     return {
         title: 'くふうで生活を賢く・楽しく',

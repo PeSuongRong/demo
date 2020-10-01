@@ -18,46 +18,60 @@
                 <p><span>企業・グループ情報</span></p>
                 <ul>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="/about/info"
-                    >企業・グループ情報トップ</a>
+                      to="/about/info"
+                    >
+                      企業・グループ情報トップ
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="/about/info/philosophy"
-                    >企業理念</a>
+                      to="/about/info/philosophy"
+                    >
+                      企業理念
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="/about/info/products"
-                    >事業・サービス概要</a>
+                      to="/about/info/products"
+                    >
+                      事業・サービス概要
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="/about/info/boards"
-                    >役員一覧</a>
+                      to="/about/info/boards"
+                    >
+                      役員一覧
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="/about/info/profile"
-                    >会社概要</a>
+                      to="/about/info/profile"
+                    >
+                      会社概要
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="/about/info/access"
-                    >アクセス</a>
+                      to="/about/info/access"
+                    >
+                      アクセス
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="/about/info/history"
-                    >沿革</a>
+                      to="/about/info/history"
+                    >
+                      沿革
+                    </router-link>
                   </li>
                 </ul>
               </li>

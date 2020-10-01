@@ -1,22 +1,32 @@
 <template>
-   <main id="info-boards" class="page-second">
-        <section class="l-info-boards">
-            <div class="l-content">
-                <h2 class="c-title3 text-center"><span>役員一覧</span><small class="mont">Boards</small></h2>
-                <div class="pdt15 l-info-boards__text">
-                    <ul class="text-center">
-                        <li v-for="(item, index) in listBoard" :key="index">
-                            <dl>
-                                <dt>{{item.tt}}</dt>
-                                <dd>{{item.info}}</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <p class="text-right"><time datetime="2019-12-17">{{date}}</time></p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main
+    id="info-boards"
+    class="page-second"
+  >
+    <section class="l-info-boards">
+      <div class="l-content">
+        <h2 class="c-title3 text-center">
+          <span>役員一覧</span><small class="mont">Boards</small>
+        </h2>
+        <div class="pdt15 l-info-boards__text">
+          <ul class="text-center">
+            <li
+              v-for="(item, index) in listBoard"
+              :key="index"
+            >
+              <dl>
+                <dt>{{ item.tt }}</dt>
+                <dd>{{ item.info }}</dd>
+              </dl>
+            </li>
+          </ul>
+          <p class="text-right">
+            <time datetime="2019-12-17">{{ date }}</time>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -63,7 +73,7 @@ var listBoards = [
     }
 ]
 export default {
-  name: 'boards',
+  name: 'Boards',
   data () {
     return {
     date:"2019年12月17日時点",

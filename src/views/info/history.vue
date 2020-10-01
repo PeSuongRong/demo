@@ -1,23 +1,44 @@
 <template>
-   <main id="info-history" class="page-second">
-        <section class="l-info-history">
-            <div class="l-content">
-                <h2 class="c-title3 text-center"><span>沿革</span><small class="mont">History</small></h2>
-                <div class="l-info--history__infor pdt15">
-                    <div class="p-item-history" v-for="(item,index) in listHistory" :key="index">
-                        <h3>{{item.tt}}</h3>
-                        <div v-html="item.info"></div>
-                    </div>
-                    <div class="l-list-link">
-                        <h3 class="u-pd--bt">2018年9月までの沿革</h3>
-                        <ul>
-                            <li v-for="(item, index) in listLink" :key="index"><a :href="item.link" target="_blank" rel="noopener noreferrer">{{item.name}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main
+    id="info-history"
+    class="page-second"
+  >
+    <section class="l-info-history">
+      <div class="l-content">
+        <h2 class="c-title3 text-center">
+          <span>沿革</span><small class="mont">History</small>
+        </h2>
+        <div class="l-info--history__infor pdt15">
+          <div
+            v-for="(item,index) in listHistory"
+            :key="index"
+            class="p-item-history"
+          >
+            <h3>{{ item.tt }}</h3>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <div v-html="item.info" />
+          </div>
+          <div class="l-list-link">
+            <h3 class="u-pd--bt">
+              2018年9月までの沿革
+            </h3>
+            <ul>
+              <li
+                v-for="(item, index) in listLink"
+                :key="index"
+              >
+                <a
+                  :href="item.link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >{{ item.name }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -46,7 +67,7 @@ var listLink = [
     }
 ]
 export default {
-  name: 'history',
+  name: 'History',
   data () {
     return {
      listHistory: listHistory,

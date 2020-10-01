@@ -40,6 +40,7 @@
 export default {
   name: 'SecHome5',
   props: {
+      // eslint-disable-next-line vue/require-default-prop
       list: Array
   },
   data () {

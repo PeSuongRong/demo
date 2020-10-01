@@ -1,27 +1,54 @@
 <template>
-    <main id="info-products" class="page-second">
-        <section class="l-info-products">
-            <div class="l-content">
-                <h2 class="c-title3 text-center"><span>事業・サービス概要</span><small class="mont">Our Business and Services</small></h2>
-                <ul class="l-list-products">
-                    <li v-for="(item, index) in list" :key="index">
-                        <figure><img :src="item.img" :alt="item.title"></figure>
-                        <div>
-                            <dl>
-                                <dt class="c-title6">{{item.title}}</dt>
-                                <dd>{{item.info}}</dd>
-                            </dl>
-                            <div v-if="item.logo" class="flex c-img-link">
-                                <a v-for="(imgLogo, index) in item.logo" :key="index" :href="imgLogo.link" target="_blank" rel="noopener noreferrer">
-                                    <figure><img :src="imgLogo.src" :alt="item.title"></figure>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+  <main
+    id="info-products"
+    class="page-second"
+  >
+    <section class="l-info-products">
+      <div class="l-content">
+        <h2 class="c-title3 text-center">
+          <span>事業・サービス概要</span><small class="mont">Our Business and Services</small>
+        </h2>
+        <ul class="l-list-products">
+          <li
+            v-for="(item, index) in list"
+            :key="index"
+          >
+            <figure>
+              <img
+                :src="item.img"
+                :alt="item.title"
+              >
+            </figure>
+            <div>
+              <dl>
+                <dt class="c-title6">
+                  {{ item.title }}
+                </dt>
+                <dd>{{ item.info }}</dd>
+              </dl>
+              <div
+                v-if="item.logo"
+                class="flex c-img-link"
+              >
+                <a
+                  v-for="(imgLogo, index1) in item.logo"
+                  :key="index1"
+                  :href="imgLogo.link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure><img
+                    :src="imgLogo.src"
+                    :alt="item.title"
+                  ></figure>
+                </a>
+              </div>
             </div>
-        </section>
-    </main>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -117,7 +144,7 @@ var listProduct = [
     }
 ]
 export default {
-  name: 'products',
+  name: 'Products',
   data () {
     return {
         list: listProduct
