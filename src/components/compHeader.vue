@@ -79,66 +79,86 @@
                 <p><span>株主・投資家情報</span></p>
                 <ul>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="./about/ir"
-                    >株主・投資家情報トップ</a>
+                      to="./about/ir"
+                    >
+                      株主・投資家情報トップ
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="./about/ir/news"
-                    >IRニュース</a>
+                      to="./about/ir/news"
+                    >
+                      IRニュース
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="./about/ir/library"
-                    >IRライブラリ</a>
+                      to="./about/ir/library"
+                    >
+                      IRライブラリ
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="./about/ir/financial"
-                    >株式情報</a>
+                      to="./about/ir/financial"
+                    >
+                      株式情報
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="./about/ir/calendar"
-                    >IRカレンダー</a>
+                      to="./about/ir/calendar"
+                    >
+                      IRカレンダー
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="./about/ir/notice"
-                    >電子公告</a>
+                      to="./about/ir/notice"
+                    >
+                      電子公告
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="./about/ir/disclosure_policy"
-                    >ディスクロージャー・ポリシー</a>
+                      to="./about/ir/disclosure_policy"
+                    >
+                      ディスクロージャー・ポリシー
+                    </router-link>
                   </li>
                   <li>
-                    <a
+                    <router-link
                       class="link"
-                      href="./about/ir/disclaimer"
-                    >免責事項</a>
+                      to="./about/ir/disclaimer"
+                    >
+                      免責事項
+                    </router-link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a
+                <router-link
                   class="link"
-                  href="./about/pressroom"
-                ><span>プレスルーム</span></a>
+                  to="./about/pressroom"
+                >
+                  <span>プレスルーム</span>
+                </router-link>
               </li>
               <li>
-                <a
-                  href="https://entrepreneur.kufu.co.jp/"
+                <router-link
+                  to="https://entrepreneur.kufu.co.jp/"
                   class="link"
-                ><span>採用情報</span></a>
+                >
+                  <span>採用情報</span>
+                </router-link>
               </li>
             </ul>
           </div>

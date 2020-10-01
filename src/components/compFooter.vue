@@ -11,39 +11,73 @@
         <li>
           <p>企業・グループ情報</p>
           <div class="c-menu-ft--child">
-            <a href="/about/info">企業・グループ情報トップ</a>
-            <a href="/about/info/philosophy">企業理念</a>
-            <a href="/about/info/products">事業・サービス概要</a>
-            <a href="/about/info/boards">役員一覧</a>
-            <a href="/about/info/profile">会社概要</a>
-            <a href="/about/info/access">アクセス</a>
-            <a href="/about/info/history">沿革</a>
+            <router-link to="/about/info">
+              企業・グループ情報トップ
+            </router-link>
+            <router-link to="/about/info/philosophy">
+              企業理念
+            </router-link>
+            <router-link to="/about/info/products">
+              事業・サービス概要
+            </router-link>
+            <router-link to="/about/info/boards">
+              役員一覧
+            </router-link>
+            <router-link to="/about/info/profile">
+              会社概要
+            </router-link>
+            <router-link to="/about/info/access">
+              アクセス
+            </router-link>
+            <router-link to="/about/info/history">
+              沿革
+            </router-link>
           </div>
         </li>
         <li>
           <p>株主・投資家情報</p>
           <div class="c-menu-ft--child">
-            <a href="./about/ir">株主・投資家情報トップ</a>
-            <a href="./about/ir/news">IRニュース</a>
-            <a href="./about/ir/library">IRライブラリ</a>
-            <a href="./about/ir/financial">株式情報</a>
-            <a href="./about/ir/calendar">IRカレンダー</a>
-            <a href="./about/ir/notice">電子公告</a>
-            <a href="./about/ir/disclosure_policy">ディスクロージャー・ポリシー</a>
-            <a href="./about/ir/disclaimer">免責事項</a>
+            <router-link to="./about/ir">
+              株主・投資家情報トップ
+            </router-link>
+            <router-link to="./about/ir/news">
+              IRニュース
+            </router-link>
+            <router-link to="./about/ir/library">
+              IRライブラリ
+            </router-link>
+            <router-link to="./about/ir/financial">
+              株式情報
+            </router-link>
+            <router-link to="./about/ir/calendar">
+              IRカレンダー
+            </router-link>
+            <router-link to="./about/ir/notice">
+              電子公告
+            </router-link>
+            <router-link to="./about/ir/disclosure_policy">
+              ディスクロージャー・ポリシー
+            </router-link>
+            <router-link to="./about/ir/disclaimer">
+              免責事項
+            </router-link>
           </div>
         </li>
         <li>
           <p class="hidden_sp">
             プレスルーム
           </p>
-          <a href="./about/pressroom">プレスルーム</a>
+          <router-link to="./about/pressroom">
+            プレスルーム
+          </router-link>
         </li>
         <li>
           <p class="hidden_sp">
             採用情報
           </p>
-          <a href="https://entrepreneur.kufu.co.jp/">採用情報</a>
+          <router-link to="https://entrepreneur.kufu.co.jp/">
+            採用情報
+          </router-link>
         </li>
         <li>
           <p class="hidden_sp">
