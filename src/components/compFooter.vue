@@ -40,25 +40,25 @@
             <router-link to="./about/ir">
               株主・投資家情報トップ
             </router-link>
-            <router-link to="./about/ir/news">
+            <router-link to="/about/ir/news">
               IRニュース
             </router-link>
-            <router-link to="./about/ir/library">
+            <router-link to="/about/ir/library">
               IRライブラリ
             </router-link>
-            <router-link to="./about/ir/financial">
+            <router-link to="/about/ir/financial">
               株式情報
             </router-link>
-            <router-link to="./about/ir/calendar">
+            <router-link to="/about/ir/calendar">
               IRカレンダー
             </router-link>
-            <router-link to="./about/ir/notice">
+            <router-link to="/about/ir/notice">
               電子公告
             </router-link>
-            <router-link to="./about/ir/disclosure_policy">
+            <router-link to="/about/ir/disclosure_policy">
               ディスクロージャー・ポリシー
             </router-link>
-            <router-link to="./about/ir/disclaimer">
+            <router-link to="/about/ir/disclaimer">
               免責事項
             </router-link>
           </div>
@@ -67,7 +67,7 @@
           <p class="hidden_sp">
             プレスルーム
           </p>
-          <router-link to="./about/pressroom">
+          <router-link to="/about/pressroom">
             プレスルーム
           </router-link>
         </li>

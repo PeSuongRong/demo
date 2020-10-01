@@ -81,7 +81,7 @@
                   <li>
                     <router-link
                       class="link"
-                      to="./about/ir"
+                      to="/about/ir"
                     >
                       株主・投資家情報トップ
                     </router-link>
@@ -89,7 +89,7 @@
                   <li>
                     <router-link
                       class="link"
-                      to="./about/ir/news"
+                      to="/about/ir/news"
                     >
                       IRニュース
                     </router-link>
@@ -97,7 +97,7 @@
                   <li>
                     <router-link
                       class="link"
-                      to="./about/ir/library"
+                      to="/about/ir/library"
                     >
                       IRライブラリ
                     </router-link>
@@ -105,7 +105,7 @@
                   <li>
                     <router-link
                       class="link"
-                      to="./about/ir/financial"
+                      to="/about/ir/financial"
                     >
                       株式情報
                     </router-link>
@@ -113,7 +113,7 @@
                   <li>
                     <router-link
                       class="link"
-                      to="./about/ir/calendar"
+                      to="/about/ir/calendar"
                     >
                       IRカレンダー
                     </router-link>
@@ -121,7 +121,7 @@
                   <li>
                     <router-link
                       class="link"
-                      to="./about/ir/notice"
+                      to="/about/ir/notice"
                     >
                       電子公告
                     </router-link>
@@ -129,7 +129,7 @@
                   <li>
                     <router-link
                       class="link"
-                      to="./about/ir/disclosure_policy"
+                      to="/about/ir/disclosure_policy"
                     >
                       ディスクロージャー・ポリシー
                     </router-link>
@@ -137,7 +137,7 @@
                   <li>
                     <router-link
                       class="link"
-                      to="./about/ir/disclaimer"
+                      to="/about/ir/disclaimer"
                     >
                       免責事項
                     </router-link>
@@ -147,7 +147,7 @@
               <li>
                 <router-link
                   class="link"
-                  to="./about/pressroom"
+                  to="/about/pressroom"
                 >
                   <span>プレスルーム</span>
                 </router-link>
