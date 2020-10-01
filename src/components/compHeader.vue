@@ -153,12 +153,12 @@
                 </router-link>
               </li>
               <li>
-                <router-link
-                  to="https://entrepreneur.kufu.co.jp/"
+                <a
+                  href="https://entrepreneur.kufu.co.jp/"
                   class="link"
                 >
                   <span>採用情報</span>
-                </router-link>
+                </a>
               </li>
             </ul>
           </div>

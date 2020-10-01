@@ -75,9 +75,9 @@
           <p class="hidden_sp">
             採用情報
           </p>
-          <router-link to="https://entrepreneur.kufu.co.jp/">
+          <a href="https://entrepreneur.kufu.co.jp/">
             採用情報
-          </router-link>
+          </a>
         </li>
         <li>
           <p class="hidden_sp">
