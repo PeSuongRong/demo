@@ -20,6 +20,7 @@
                 />
               </h2>
             </dt>
+            <!-- eslint-disable-next-line vue/no-v-html -->
             <dd v-html="listSecHome2[0].info" />
           </dl>
         </div>
@@ -41,6 +42,7 @@
                 />
               </h2>
             </dt>
+            <!-- eslint-disable-next-line vue/no-v-html -->
             <dd v-html="listSecHome2[1].info" />
           </dl>
         </div>
@@ -62,6 +64,7 @@
                 />
               </h2>
             </dt>
+            <!-- eslint-disable-next-line vue/no-v-html -->
             <dd v-html="listSecHome2[2].info" />
           </dl>
         </div>
@@ -69,7 +72,6 @@
     </div>
   </section>
 </template>
-
 <script>
 var listSecHome2 = [
     {
