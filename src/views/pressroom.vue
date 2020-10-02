@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-use-v-if-with-v-for */
 <template>
   <main
     id="presroom"
@@ -9,16 +10,23 @@
       </h2>
       <div class="l-presroom1--menu flex flex-jus-center flex-align-item-center">
         <ul class="flex flex-jus-start">
-          <li><span>最新1年分</span></li>
           <li>
-            <a
-              href="javascript:void(0)" 
-            >2020</a>
+            <span
+              :class="{ act: year === 'ALL' }"
+              @click="setFilter('ALL')"
+            >最新1年分</span>
           </li>
           <li>
-            <a
-              href="javascript:void(0)"
-            >2019</a>
+            <span 
+              :class="{ act: year === '2020' }"
+              @click="setFilter('2020')"
+            >2020</span>
+          </li>
+          <li>
+            <span
+              :class="{ act: year === '2019' }"
+              @click="setFilter('2019')"
+            >2019</span>
           </li>
         </ul>
       </div>
@@ -27,6 +35,7 @@
           <ul class="l-news">
             <li
               v-for="(item, index) in listNew.slice(0,10)"
+              v-show="year == new Date(item.date).getFullYear() || year == 'ALL'"
               :key="index"
             >
               <a
@@ -46,6 +55,7 @@
           <ul class="l-news">
             <li
               v-for="(item, index) in listNew"
+              v-show="year == new Date(item.date).getFullYear() || year == 'ALL'"
               :key="index"
             >
               <a
@@ -124,11 +134,16 @@
 // eslint-disable-next-line no-undef
 window.axios = require('axios');
 import $ from 'jquery'
+Array.prototype.unique = function() {
+  return Array.from(new Set(this));
+}
+
 export default {
   name: 'Pressrom',
   data () {
     return {
-      listNew: []
+      listNew: [],
+      year: "ALL"
     }
   },
   mounted(){
@@ -145,5 +160,10 @@ export default {
           })
     )
   },
+  methods: {
+    setFilter: function(filter) {
+			this.year = filter;
+		}
+  }
 }
 </script>

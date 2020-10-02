@@ -335,8 +335,9 @@ body{
                     display: block;
                     padding: .5rem 1rem;
                     font-weight: 700;
+                    color: rgba(40,46,51,.54);
                 }
-                >span{
+                >span.act{
                     position: relative;
                     color: #223a70;
                     &:after {
@@ -351,9 +352,6 @@ body{
                         background: #fff574;
                         z-index: -1;
                     }
-                }
-                >a {
-                    color: rgba(40,46,51,.54);
                 }
             }
         }
