@@ -74,7 +74,10 @@
           </ul>
         </div>
       </div>
-      <div class="l-presroom1--btn text-center">
+      <div
+        v-if="year== 'ALL'"
+        class="l-presroom1--btn text-center"
+      >
         <span class="c-btn2 flex flex-align-item-center flex-jus-center"><span>もっと見る</span></span>
       </div>
     </section>
@@ -134,9 +137,9 @@
 // eslint-disable-next-line no-undef
 window.axios = require('axios');
 import $ from 'jquery'
-Array.prototype.unique = function() {
-  return Array.from(new Set(this));
-}
+// Array.prototype.unique = function() {
+//   return Array.from(new Set(this));
+// }
 
 export default {
   name: 'Pressrom',

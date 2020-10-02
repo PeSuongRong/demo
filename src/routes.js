@@ -10,6 +10,8 @@ import Philosophy from './views/info/philosophy'
 import Products from './views/info/products'
 import Profile from './views/info/profile'
 import Ir from './views/ir/ir'
+import Financial from './views/ir/financial'
+import Disclaimer from './views/ir/disclaimer'
 
 export const routes = [
     {
@@ -30,6 +32,12 @@ export const routes = [
     },
     {
         path: '/about/ir', name: 'IR', component: Ir
+    },
+    {
+        path: '/about/ir/financial', name: 'Financial', component: Financial
+    },
+    {
+        path: '/about/ir/disclaimer', name: 'Disclaimer', component: Disclaimer
     },
     {
         path: '/about/info', name: 'Info', component: Info
